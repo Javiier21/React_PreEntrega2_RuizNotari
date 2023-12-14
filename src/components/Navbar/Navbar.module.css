@@ -2,3 +2,11 @@
     display: flex;
     background-color: blue;
 }
+.cart-widget {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cart-widget p{
+    margin: 0;
+}

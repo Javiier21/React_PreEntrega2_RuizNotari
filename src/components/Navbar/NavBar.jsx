@@ -1,6 +1,7 @@
 import React from "react";
 import CartWidget from "./CartWidget";
 import classes from "./Navbar.module.css";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
@@ -10,19 +11,19 @@ const NavBar = () => {
           <nav className="navbar">
             {/* Brand */}
             <div className="navbar-brand">
-              <span>Tu Tienda</span>
+              <Link className="text-decoration-none text-black" to='/'>Ecommerce</Link>
             </div>
 
             {/* Listado de categorías clickeables */}
             <ul className="align-self-md-center d-flex flex-row justify-content-between navbar-nav w-50">
               <li className="nav-item">
-                <a className="btn btn-success" href="/">Categoría 1</a>
+                <Link to='/category/celular' className="btn btn-success" href="/">Celulares</Link>
               </li>
               <li className="nav-item">
-                <a className="btn btn-success" href="/">Categoría 2</a>
+                <Link to='/category/tablet' className="btn btn-success" href="/">Tablets</Link>
               </li>
               <li className="nav-item">
-                <a className="btn btn-success" href="/">Categoría 3</a>
+                <Link to='/category/notebook' className="btn btn-success" href="/">Notebooks</Link>
               </li>
               {/* ... Agrega más categorías según sea necesario */}
             </ul>
